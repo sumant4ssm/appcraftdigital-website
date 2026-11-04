@@ -330,6 +330,10 @@ header.site {
 .contact .btn { background: var(--on-ink); color: var(--ink); }
 .contact .btn:hover { background: color-mix(in srgb, var(--on-ink) 88%, var(--ink)); }
 .contact .btn:focus-visible { outline-color: var(--on-ink); }
+.contact-action { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.contact-action .btn { min-width: 168px; }
+/* One click selects the whole address, for people who'd rather copy it. */
+.contact-address { font-size: 0.92rem; opacity: 0.7; user-select: all; }
 
 /* ---------- Footer ---------- */
 footer.site {
@@ -704,6 +708,7 @@ html.js .feature-panel > p:first-of-type { margin-top: 0; }
   .highlights { grid-template-columns: 1fr; }
   .principles, .privacy-list { grid-template-columns: 1fr; }
   .contact { padding: 28px 24px; }
+  .contact-action { width: 100%; align-items: stretch; text-align: center; }
   .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
   .app-hero { padding: 28px 0 56px; }
   .app-hero-grid { grid-template-columns: 1fr; gap: 20px; }
