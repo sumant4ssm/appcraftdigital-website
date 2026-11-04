@@ -17,7 +17,7 @@ the site indexed and understood, but ranking for competitive terms ("app lock",
   - Each app: `SoftwareApplication` + `FAQPage` + `BreadcrumbList`
 - [x] **FAQ sections** targeting "People also ask" queries for each app
 - [x] **Open Graph + Twitter Card** tags on every page, including 1200×630 share images
-- [x] **`robots.txt`** (allow all) + **`sitemap.xml`** (all 5 pages)
+- [x] **`robots.txt`** (allow all) + **`sitemap.xml`** (all 4 pages)
 - [x] **Custom-domain canonicalization** — canonical URLs, `og:url`, JSON-LD URLs,
   `robots.txt`, and `sitemap.xml` all use `https://appcraftdigital.co.in`
 - [x] **Clean schema** — removed placeholder ratings and invalid site-search markup
@@ -35,7 +35,7 @@ These have a **much bigger ranking impact** than any code change. Do them in ord
 3. Verify ownership (GitHub Pages sites can be verified via the HTML tag method —
    paste the meta tag into each page's `<head>`, or use the Google Analytics method).
 4. Submit the sitemap: `https://appcraftdigital.co.in/sitemap.xml`
-5. Use **URL Inspection → Request Indexing** for each of the 5 pages.
+5. Use **URL Inspection → Request Indexing** for each of the 4 pages. The old `/multi-scanner-ultra/` page was removed in Oct 2026 and now returns the 404 page; it drops out of the index on its own, or use Search Console → Removals to speed that up.
 
 ### 2. GitHub Pages domain settings
 - In Settings → Pages, confirm the custom domain is `appcraftdigital.co.in`.

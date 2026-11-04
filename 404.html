@@ -3,68 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.documentElement.classList.add('js');</script>
   <title>Page not found — AppCraft Digital</title>
-  <meta name="description" content="The page you were looking for doesn't exist. Explore AppCraft Digital's privacy-first Android apps instead.">
+  <meta name="description" content="The page you were looking for doesn't exist. See AppCraft Digital's Android apps instead.">
   <meta name="robots" content="noindex, follow">
-  <meta name="theme-color" content="#0b0d12">
+  <meta name="theme-color" content="#faf9fc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121016" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/assets/brand/appcraft-digital-icon.png">
-  <link rel="stylesheet" href="/assets/style.css?v=20260703-logo">
+  <link rel="stylesheet" href="/assets/style.css?v=20261025">
 </head>
 <body>
-  <div class="aurora" aria-hidden="true"></div>
-
   <header class="site">
     <div class="wrap nav">
-      <a class="brand" href="/" aria-label="AppCraft Digital home">
-        <span class="logo" aria-hidden="true">
-          <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="40" height="40">
-        </span>
-        <span>AppCraft Digital<small>Privacy-first apps</small></span>
+      <a class="brand" href="/">
+        <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="32" height="32">
+        AppCraft Digital
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="/applock-ultra/">AppLock Ultra</a>
-        <a href="/internet-velocity/">Internet Velocity</a>
-        <a href="/multi-scanner-ultra/">Multi Scanner</a>
         <a href="/encrypted-gallery/">Encrypted Gallery</a>
+        <a href="/internet-velocity/">Internet Velocity</a>
+        <a href="/#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main">
+    <section class="notfound">
       <div class="wrap">
-        <span class="pill"><span class="dot" aria-hidden="true"></span> Error 404</span>
-        <h1>This page <span class="grad">wandered off</span></h1>
-        <p class="lead">
-          The link may be broken, or the page may have moved. Nothing here tracks you, so
-          let's get you back to something useful.
-        </p>
+        <h1>This page doesn't exist</h1>
+        <p>The link may be out of date, or the page may have moved. Head back to the homepage or pick one of our apps below.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="/">Back to home</a>
-          <a class="btn btn-ghost" href="/#apps">Browse the apps</a>
+          <a class="btn btn-ink" href="/">Go to the homepage</a>
+          <a class="btn btn-line" href="mailto:appcraftdigital@gmail.com">Email us</a>
         </div>
-      </div>
-    </section>
-
-    <section style="padding-top:0;">
-      <div class="wrap">
         <div class="related">
           <a href="/applock-ultra/">
-            <span class="app-icon"><img src="/assets/icons/applock-ultra.png" alt="" width="38" height="38"></span>
-            <span><b>AppLock Ultra</b><small>App locker</small></span>
-          </a>
-          <a href="/internet-velocity/">
-            <span class="app-icon"><img src="/assets/icons/internet-velocity.png" alt="" width="38" height="38"></span>
-            <span><b>Internet Velocity</b><small>Speed meter</small></span>
-          </a>
-          <a href="/multi-scanner-ultra/">
-            <span class="app-icon"><img src="/assets/icons/multi-scanner-ultra.png" alt="" width="38" height="38"></span>
-            <span><b>Multi Scanner</b><small>PDF scanner</small></span>
+            <img src="/assets/icons/applock-ultra.png" alt="" width="48" height="48">
+            <span><b>AppLock Ultra</b><small>Lock any app with a PIN, pattern or fingerprint</small></span>
           </a>
           <a href="/encrypted-gallery/">
-            <span class="app-icon"><img src="/assets/icons/encrypted-gallery.png" alt="" width="38" height="38"></span>
-            <span><b>Encrypted Gallery</b><small>Photo vault</small></span>
+            <img src="/assets/icons/encrypted-gallery.png" alt="" width="48" height="48">
+            <span><b>Encrypted Gallery</b><small>Encrypted vault for photos, videos and files</small></span>
+          </a>
+          <a href="/internet-velocity/">
+            <img src="/assets/icons/internet-velocity.png" alt="" width="48" height="48">
+            <span><b>Internet Velocity</b><small>Live speed meter and data usage</small></span>
           </a>
         </div>
       </div>
@@ -73,13 +56,13 @@
 
   <footer class="site">
     <div class="wrap">
-      <div class="foot-bottom" style="border-top:none; margin-top:0; padding-top:0;">
-        <span>© <span id="year"></span> AppCraft Digital. All rights reserved.</span>
-        <span>Made with care · No cookies, no trackers.</span>
+      <div class="foot-bottom" style="margin-top:0; padding-top:0; border-top:0;">
+        <span>© <span id="year">2026</span> AppCraft Digital</span>
+        <span>This website uses no cookies and no analytics.</span>
       </div>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/site.js?v=20261025" defer></script>
 </body>
 </html>

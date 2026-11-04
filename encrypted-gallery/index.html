@@ -4,17 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.documentElement.classList.add('js');</script>
-  <title>Encrypted Gallery — Photo Vault &amp; Gallery Lock</title>
-  <meta name="description" content="Encrypted Gallery is a security-first photo vault for Android. Hide photos, lock your gallery, and encrypt photos on-device. Private, no cloud.">
-  <meta name="keywords" content="gallery lock, photo lock, encrypt photos, photo vault, hide photos, private gallery, lock gallery, photo locker, hide pictures, secret photo vault">
+  <title>Encrypted Gallery — Photo Vault that Encrypts Photos &amp; Files on Android</title>
+  <meta name="description" content="Encrypted Gallery is a photo vault for Android that encrypts photos, videos, files and notes on your phone with AES-256. Decoy vault, intruder selfie and app disguise. No account.">
+  <meta name="keywords" content="photo vault, encrypt photos, gallery lock, hide photos, private gallery, encrypted vault android, secure notes, decoy vault, hide videos, file locker">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#ec4899">
+  <meta name="theme-color" content="#faf9fc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121016" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://appcraftdigital.co.in/encrypted-gallery/">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AppCraft Digital">
-  <meta property="og:title" content="Encrypted Gallery — Photo Lock &amp; Photo Vault for Android">
-  <meta property="og:description" content="Hide photos, lock your gallery, and encrypt photos on-device behind biometric and PIN protection. Privacy-first photo vault.">
+  <meta property="og:title" content="Encrypted Gallery — Encrypted Photo Vault for Android">
+  <meta property="og:description" content="Encrypt photos, videos, files and notes on your phone with AES-256. Decoy vault, intruder selfie and app disguise. No account needed.">
   <meta property="og:url" content="https://appcraftdigital.co.in/encrypted-gallery/">
   <meta property="og:image" content="https://appcraftdigital.co.in/assets/og/encrypted-gallery.png">
   <meta property="og:image:alt" content="Encrypted Gallery photo vault for Android">
@@ -22,32 +23,40 @@
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Encrypted Gallery — Photo Vault &amp; Gallery Lock">
-  <meta name="twitter:description" content="Hide and encrypt photos on-device behind biometric and PIN protection.">
+  <meta name="twitter:title" content="Encrypted Gallery — Encrypted Photo Vault">
+  <meta name="twitter:description" content="Encrypt photos, videos, files and notes on your phone with AES-256. No account needed.">
   <meta name="twitter:image" content="https://appcraftdigital.co.in/assets/og/encrypted-gallery.png">
   <meta name="twitter:image:alt" content="Encrypted Gallery photo vault for Android">
 
   <link rel="icon" type="image/png" href="/assets/brand/appcraft-digital-icon.png">
-  <link rel="stylesheet" href="/assets/style.css?v=20260703-logo">
+  <link rel="stylesheet" href="/assets/style.css?v=20261025">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Encrypted Gallery",
-    "operatingSystem": "ANDROID",
+    "alternateName": "Encrypted Gallery: Photo Vault",
+    "operatingSystem": "Android 8.0 or later",
     "applicationCategory": "UtilitiesApplication",
-    "description": "Security-first photo vault and gallery lock for Android. Hide photos, lock the gallery, and encrypt photos and files on-device behind biometric and PIN protection.",
+    "description": "Photo and file vault for Android. Encrypts photos, videos, audio, files and notes on the phone with AES-256-GCM, with PIN, password, pattern or biometric unlock, a recovery code in case you forget your PIN, a decoy vault, intruder selfies and app disguise.",
     "url": "https://appcraftdigital.co.in/encrypted-gallery/",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.encryptedgallery.app",
     "image": "https://appcraftdigital.co.in/assets/icons/encrypted-gallery.png",
+    "author": { "@type": "Organization", "name": "AppCraft Digital", "url": "https://appcraftdigital.co.in/" },
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "featureList": [
-      "On-device photo and file encryption vault",
-      "Biometric and PIN lock for the gallery",
-      "Hide photos from the main gallery",
-      "Inactivity auto-lock and tamper detection",
-      "Screenshot protection in the vault",
-      "No cloud upload, fully local"
+      "AES-256-GCM encryption on the phone",
+      "Vault key protected by PIN and Android Keystore",
+      "Screenshot and Recents blocking",
+      "PIN, password, pattern or biometric unlock",
+      "Recovery code if you forget your PIN",
+      "Auto-lock and wrong-attempt lockout",
+      "Decoy vault, intruder selfie and self-destruct",
+      "App disguise and fake crash screen",
+      "Private gallery, photo editor, video and audio player, PDF viewer",
+      "Private camera, voice recorder and secure notes",
+      "Folders inside folders, trash, encrypted backup and SD card vault"
     ]
   }
   </script>
@@ -66,37 +75,37 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "How do I encrypt photos on my phone?", "acceptedAnswer": { "@type": "Answer", "text": "With Encrypted Gallery you import photos into the vault; the app encrypts them on-device so they no longer appear in your main gallery and can only be opened inside the vault after you authenticate with biometric or PIN." } },
-      { "@type": "Question", "name": "What is the best gallery lock app?", "acceptedAnswer": { "@type": "Answer", "text": "The best gallery lock app encrypts your photos on-device rather than just hiding them, locks behind biometric and PIN, and never uploads your media to a server. Encrypted Gallery is built around exactly those principles." } },
-      { "@type": "Question", "name": "How do I hide photos on Android?", "acceptedAnswer": { "@type": "Answer", "text": "Install Encrypted Gallery, import the photos you want to keep private, and they are removed from your main gallery and stored encrypted inside the vault. They become visible again only after you unlock the vault." } },
-      { "@type": "Question", "name": "Is my photo vault uploaded to the cloud?", "acceptedAnswer": { "@type": "Answer", "text": "No. Encrypted Gallery is local-first. Your photos and files are encrypted and stored on your device. Nothing is uploaded to any server unless you explicitly export it yourself." } },
-      { "@type": "Question", "name": "Can someone bypass the gallery lock?", "acceptedAnswer": { "@type": "Answer", "text": "Encrypted Gallery uses biometric or PIN protection plus tamper detection and an inactivity auto-lock, so even if someone picks up your unlocked phone, the vault re-locks itself and denies access without authentication." } }
+      { "@type": "Question", "name": "How do I encrypt photos on my phone?", "acceptedAnswer": { "@type": "Answer", "text": "Add the photos to Encrypted Gallery. Each one is encrypted on your phone with AES-256-GCM as it enters the vault, and can only be viewed inside the app after you unlock it. The app then offers to delete the unencrypted originals from your gallery." } },
+      { "@type": "Question", "name": "How do I hide photos on Android?", "acceptedAnswer": { "@type": "Answer", "text": "Import them into Encrypted Gallery and choose to delete the originals when asked. On Android 11 and later you can allow All files access once, so removing originals takes a single tap instead of a confirmation each time." } },
+      { "@type": "Question", "name": "Is Encrypted Gallery free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Encryption, the gallery, players, camera, screenshot blocking, the recovery code and restoring a backup are free, with ads, for up to 20 items, 3 folders per section, 3 notes and 3 voice recordings. Pro removes ads and limits and adds biometric unlock, the decoy vault, intruder selfies, disguise, the photo editor and making encrypted backups." } },
+      { "@type": "Question", "name": "What if I forget my PIN?", "acceptedAnswer": { "@type": "Answer", "text": "Use your recovery code. You save it when you set up the vault, and with it you can choose a new PIN, password or pattern. Your files stay just as they are. The same code opens your backups on a new phone." } },
+      { "@type": "Question", "name": "Is my vault uploaded to the cloud?", "acceptedAnswer": { "@type": "Answer", "text": "No. Your photos, files, notes and PIN never leave your phone, and the vault is excluded from Android's automatic cloud backup. If you make a backup yourself (Pro), it is saved still encrypted to a file or folder you choose." } },
+      { "@type": "Question", "name": "What if someone makes me unlock it?", "acceptedAnswer": { "@type": "Answer", "text": "With Pro you can set up a decoy vault: a second PIN, password or pattern that opens a separate, harmless vault. You can also have the vault wiped automatically after 3 to 20 wrong attempts." } },
+      { "@type": "Question", "name": "Can I unlock it with my fingerprint?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with Pro, on phones with strong biometrics. The unlock key is tied to your phone's hardware and stops working if a new fingerprint or face is added, so your PIN is needed again." } }
     ]
   }
   </script>
 </head>
-<body>
-  <div class="aurora" aria-hidden="true"></div>
+<body class="app-gallery">
+  <a class="skip" href="#main">Skip to content</a>
 
   <header class="site">
     <div class="wrap nav">
-      <a class="brand" href="/" aria-label="AppCraft Digital home">
-        <span class="logo" aria-hidden="true">
-          <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="40" height="40">
-        </span>
-        <span>AppCraft Digital<small>Privacy-first apps</small></span>
+      <a class="brand" href="/">
+        <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="32" height="32">
+        AppCraft Digital
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="/">Home</a>
         <a href="/applock-ultra/">AppLock Ultra</a>
+        <a href="/encrypted-gallery/" aria-current="page">Encrypted Gallery</a>
         <a href="/internet-velocity/">Internet Velocity</a>
-        <a href="/multi-scanner-ultra/">Multi Scanner</a>
+        <a href="/#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <div class="wrap">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <nav class="crumbs" aria-label="Breadcrumb">
       <ol>
         <li><a href="/">Home</a></li>
         <li><a href="/#apps">Apps</a></li>
@@ -105,127 +114,628 @@
     </nav>
   </div>
 
-  <main>
+  <main id="main">
     <section class="app-hero">
       <div class="wrap">
-        <div class="hero-row">
-          <span class="app-icon" aria-hidden="true"><img src="/assets/icons/encrypted-gallery.png" alt="" width="88" height="88"></span>
+        <div class="app-hero-grid">
+          <img class="app-hero-icon" src="/assets/icons/encrypted-gallery.png" alt="Encrypted Gallery icon" width="112" height="112">
           <div>
-            <div class="app-title-line">
-              <h1>Encrypted Gallery</h1>
-              <span class="badge badge-live app-status">● Available now</span>
+            <p class="status">On Google Play</p>
+            <h1>Encrypted Gallery</h1>
+            <p class="tagline">A vault for the photos, videos, files and notes you'd rather nobody saw. Everything is encrypted on your phone before it's stored, and opens only after you unlock.</p>
+            <div class="cta">
+              <a class="btn btn-ink" href="https://play.google.com/store/apps/details?id=com.encryptedgallery.app" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.6 2.2a1.4 1.4 0 0 0-.6 1.2v17.2c0 .5.2.9.6 1.2l9.8-9.8-9.8-9.8Zm11 8.6 2.7-2.7L6.5 1.6l9.1 9.2Zm0 2.4-9.1 9.2 11.8-6.5-2.7-2.7Zm4.6-2.5-2.6-1.4-3 3 3 3 2.6-1.4c.9-.5.9-1.7 0-3.2Z"/></svg>
+                Get it on Google Play
+              </a>
+              <a class="btn btn-line" href="#features">Explore all 37 features</a>
             </div>
-            <p class="tagline">A <strong>gallery lock</strong> and <strong>photo vault</strong> that encrypts your photos on-device.</p>
           </div>
         </div>
-        <div class="cta" style="justify-content:flex-start;">
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.encryptedgallery.app" target="_blank" rel="noopener">Get on Google Play</a>
-        </div>
+        <dl class="facts">
+          <div><dt>Price</dt><dd>Free, optional Pro</dd></div>
+          <div><dt>Requires</dt><dd>Android 8.0 or later</dd></div>
+          <div><dt>Encryption</dt><dd>AES-256-GCM, on the phone</dd></div>
+          <div><dt>Account</dt><dd>Not needed</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section style="padding-top:32px;">
-      <div class="wrap detail">
-        <div class="prose">
-          <h2>Hide photos and lock your gallery — for real</h2>
-          <p>
-            <strong>Encrypted Gallery</strong> is a security-first <strong>photo vault</strong> and <strong>gallery lock</strong>
-            for Android. Import the photos and files you want to keep private, and the app
-            <strong>encrypts them on-device</strong> and removes them from your main gallery. They're visible only inside
-            the vault, and only after you unlock it with your fingerprint or PIN.
-          </p>
-          <p>
-            "Photo lock" apps that only hide files are easy to bypass. Encrypted Gallery goes further: media is
-            genuinely <strong>encrypted</strong>, the vault re-locks itself after inactivity, and tamper detection guards
-            against access attempts. Whether you want to <strong>hide photos</strong> from someone borrowing your phone,
-            protect sensitive documents, or build a truly private gallery, this is the vault for it.
-          </p>
-
-          <h2>Key features</h2>
-          <ul>
-            <li><b>On-device encryption</b> — photos and files are encrypted, not just hidden.</li>
-            <li><b>Biometric + PIN lock</b> — open the vault with fingerprint or a PIN.</li>
-            <li><b>Hide from main gallery</b> — imported media disappears from your normal gallery.</li>
-            <li><b>Inactivity auto-lock</b> — the vault re-locks itself when you step away.</li>
-            <li><b>Screenshot protection</b> — block screenshots while viewing private media.</li>
-            <li><b>Tamper detection</b> — guards against unauthorized access attempts.</li>
-          </ul>
-
-          <h2>What you can protect</h2>
-          <div class="chips">
-            <span class="chip">Private photos</span>
-            <span class="chip">Screenshots</span>
-            <span class="chip">ID &amp; documents</span>
-            <span class="chip">Videos</span>
-            <span class="chip">Receipts</span>
-            <span class="chip">Personal files</span>
-          </div>
-
-          <h2>Why encryption beats hiding</h2>
-          <p>
-            A hidden file is still an unencrypted file — anyone with the right tool can find it. Encrypted Gallery
-            transforms your media into encrypted data that is useless without your unlock credential, then keeps
-            everything on your device. There's no cloud copy, no account, and no server that could leak your photos.
-          </p>
-
-          <!-- FAQ -->
-          <h2 id="faq">Frequently asked questions</h2>
-          <div class="faq">
-            <details>
-              <summary>How do I encrypt photos on my phone?</summary>
-              <p>With Encrypted Gallery you import photos into the vault; the app encrypts them on-device so they no longer appear in your main gallery and can only be opened inside the vault after you authenticate with biometric or PIN.</p>
-            </details>
-            <details>
-              <summary>What is the best gallery lock app?</summary>
-              <p>The best gallery lock app encrypts your photos on-device rather than just hiding them, locks behind biometric and PIN, and never uploads your media to a server. Encrypted Gallery is built around exactly those principles.</p>
-            </details>
-            <details>
-              <summary>How do I hide photos on Android?</summary>
-              <p>Install Encrypted Gallery, import the photos you want to keep private, and they are removed from your main gallery and stored encrypted inside the vault. They become visible again only after you unlock the vault.</p>
-            </details>
-            <details>
-              <summary>Is my photo vault uploaded to the cloud?</summary>
-              <p>No. Encrypted Gallery is local-first. Your photos and files are encrypted and stored on your device. Nothing is uploaded to any server unless you explicitly export it yourself.</p>
-            </details>
-            <details>
-              <summary>Can someone bypass the gallery lock?</summary>
-              <p>Encrypted Gallery uses biometric or PIN protection plus tamper detection and an inactivity auto-lock, so even if someone picks up your unlocked phone, the vault re-locks itself and denies access without authentication.</p>
-            </details>
-          </div>
-        </div>
-
-        <aside class="info-card">
-          <h3>App info</h3>
-          <dl>
-            <div><dt>Platform</dt><dd>Android</dd></div>
-            <div><dt>Category</dt><dd>Privacy &amp; vault</dd></div>
-            <div><dt>Price</dt><dd>Free</dd></div>
-            <div><dt>Status</dt><dd><span class="badge badge-live">● Available now</span></dd></div>
-            <div><dt>Protection</dt><dd>Biometric + PIN</dd></div>
-            <div><dt>Storage</dt><dd>Encrypted, on-device</dd></div>
-          </dl>
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.encryptedgallery.app" target="_blank" rel="noopener">Get on Google Play</a>
-        </aside>
-      </div>
-    </section>
-
-    <section>
+    <section class="section explorer-section" id="features">
       <div class="wrap">
-        <div class="sec-head" style="margin-bottom:24px;">
-          <h2 style="font-size:1.4rem;">Explore our other apps</h2>
+        <div class="section-head">
+          <h2>Everything Encrypted Gallery can do</h2>
+          <p>Pick a feature to see how it works and what you can set. Features marked Pro need a subscription or the one-time lifetime plan; the rest are free.</p>
+        </div>
+
+        <div class="explorer" data-explorer>
+          <div class="explorer-tools" hidden>
+            <div class="filters" role="group" aria-label="Show features by category"></div>
+            <label class="search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input type="search" placeholder="Search features" aria-label="Search Encrypted Gallery features" autocomplete="off">
+            </label>
+          </div>
+
+          <div class="feature-grid">
+            <!-- Encryption -->
+            <p class="group-label" data-group="encryption">Encryption</p>
+
+            <button class="feature-tab" type="button" id="tab-on-device-encryption" aria-expanded="false" aria-controls="on-device-encryption" data-group="encryption">
+              <b>Encrypted, not just hidden</b>
+              <small>Every file is encrypted on your phone before it's stored.</small>
+            </button>
+            <div class="feature-panel" id="on-device-encryption" role="region" aria-labelledby="tab-on-device-encryption">
+              <p class="panel-group">Encryption</p>
+              <h3>Encrypted, not just hidden</h3>
+              <p>Many "hide photo" apps just move files somewhere less obvious. Encrypted Gallery encrypts every photo, video and file as it enters the vault, so without your unlock it's unreadable data. Large videos are encrypted in small chunks, so they can stream and skip without being decrypted to storage.</p>
+              <dl class="specs">
+                <div><dt>Cipher</dt><dd>AES-256-GCM</dd></div>
+                <div><dt>Large files</dt><dd>Encrypted in 1 MiB chunks</dd></div>
+                <div><dt>Tampering</dt><dd>A modified file is refused instead of opened</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-key-protection" aria-expanded="false" aria-controls="key-protection" data-group="encryption">
+              <b>Key locked by your PIN</b>
+              <small>The vault key is derived from your PIN and sealed by Android.</small>
+            </button>
+            <div class="feature-panel" id="key-protection" role="region" aria-labelledby="tab-key-protection">
+              <p class="panel-group">Encryption</p>
+              <h3>Key locked by your PIN</h3>
+              <p>The key that encrypts your files is itself locked with a key made from your PIN, password or pattern, then sealed again with Android Keystore. A second copy is locked with your recovery code, so a forgotten PIN can be reset. Changing your PIN later doesn't need to re-encrypt anything.</p>
+              <dl class="specs">
+                <div><dt>Key derivation</dt><dd>PBKDF2-HMAC-SHA256, 210,000 rounds</dd></div>
+                <div><dt>Second layer</dt><dd>Android Keystore</dd></div>
+                <div><dt>Recovery</dt><dd>120-bit recovery code</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-encrypted-catalogue" aria-expanded="false" aria-controls="encrypted-catalogue" data-group="encryption">
+              <b>Encrypted names and thumbnails</b>
+              <small>Even the list of what's in your vault is encrypted.</small>
+            </button>
+            <div class="feature-panel" id="encrypted-catalogue" role="region" aria-labelledby="tab-encrypted-catalogue">
+              <p class="panel-group">Encryption</p>
+              <h3>Encrypted names and thumbnails</h3>
+              <p>File names and details live in an encrypted database, thumbnails are encrypted on disk, and decrypted previews exist only in memory and are cleared the moment the vault locks.</p>
+              <dl class="specs">
+                <div><dt>File list</dt><dd>SQLCipher-encrypted database</dd></div>
+                <div><dt>Previews</dt><dd>In memory only, cleared on lock</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-screenshot-block" aria-expanded="false" aria-controls="screenshot-block" data-group="encryption">
+              <b>Screenshot and Recents blocking</b>
+              <small>Nobody can screenshot the vault or peek at it in Recents.</small>
+            </button>
+            <div class="feature-panel" id="screenshot-block" role="region" aria-labelledby="tab-screenshot-block">
+              <p class="panel-group">Encryption</p>
+              <h3>Screenshot and Recents blocking</h3>
+              <p>Screenshots and screen recordings are blocked everywhere in the app, and it's left out of the Recents screen, so nothing from the vault shows up when you switch apps. This is always on.</p>
+            </div>
+
+            <!-- Unlock -->
+            <p class="group-label" data-group="unlock">Unlocking</p>
+
+            <button class="feature-tab" type="button" id="tab-unlock-methods" aria-expanded="false" aria-controls="unlock-methods" data-group="unlock">
+              <b>PIN, password or pattern</b>
+              <small>Choose how you open the vault.</small>
+            </button>
+            <div class="feature-panel" id="unlock-methods" role="region" aria-labelledby="tab-unlock-methods">
+              <p class="panel-group">Unlocking</p>
+              <h3>PIN, password or pattern</h3>
+              <p>Pick the unlock method that suits you, and change it later from a step-by-step settings page.</p>
+              <dl class="specs">
+                <div><dt>PIN</dt><dd>4 to 12 digits</dd></div>
+                <div><dt>Password</dt><dd>4 to 20 characters</dd></div>
+                <div><dt>Pattern</dt><dd>At least 4 dots</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-recovery-code" aria-expanded="false" aria-controls="recovery-code" data-group="unlock">
+              <b>Recovery code</b>
+              <small>Forgot your PIN? Your recovery code gets you back in.</small>
+            </button>
+            <div class="feature-panel" id="recovery-code" role="region" aria-labelledby="tab-recovery-code">
+              <p class="panel-group">Unlocking</p>
+              <h3>Recovery code</h3>
+              <p>You save a recovery code when you set up the vault. If you ever forget your PIN, password or pattern, enter the code and choose a new one. Your files stay just as they are. The same code opens your backups on a new phone.</p>
+              <dl class="specs">
+                <div><dt>Made</dt><dd>At setup; make a new one any time in Settings</dd></div>
+                <div><dt>Also opens</dt><dd>Your backups, on this phone or a new one</dd></div>
+                <div><dt>Price</dt><dd>Free</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-biometric-unlock" aria-expanded="false" aria-controls="biometric-unlock" data-group="unlock">
+              <b>Fingerprint or face unlock <span class="tier">Pro</span></b>
+              <small>Open the vault with strong biometrics.</small>
+            </button>
+            <div class="feature-panel" id="biometric-unlock" role="region" aria-labelledby="tab-biometric-unlock">
+              <p class="panel-group">Unlocking</p>
+              <h3>Fingerprint or face unlock <span class="tier">Pro</span></h3>
+              <p>Unlock with your fingerprint or face. The key is tied to your phone's secure hardware and stops working if a new fingerprint or face is added, so someone can't enrol their own and get in.</p>
+              <dl class="specs">
+                <div><dt>Requires</dt><dd>Strong (Class 3) biometrics</dd></div>
+                <div><dt>New fingerprint added</dt><dd>Biometric unlock resets; your PIN still works</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-auto-lock" aria-expanded="false" aria-controls="auto-lock" data-group="unlock">
+              <b>Auto-lock</b>
+              <small>Locks when you leave, or after two idle minutes.</small>
+            </button>
+            <div class="feature-panel" id="auto-lock" role="region" aria-labelledby="tab-auto-lock">
+              <p class="panel-group">Unlocking</p>
+              <h3>Auto-lock</h3>
+              <p>The vault locks as soon as you leave the app, or after it's been idle for a while. It won't lock in the middle of a video or song you're playing.</p>
+              <dl class="specs">
+                <div><dt>Default</dt><dd>On leaving the app, or after 2 minutes idle</dd></div>
+                <div><dt>Custom time (Pro)</dt><dd>Immediately, 30 seconds, 1, 2 or 5 minutes</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-lockout" aria-expanded="false" aria-controls="lockout" data-group="unlock">
+              <b>Wrong-attempt lockout</b>
+              <small>Five wrong tries block the lock screen for 30 seconds.</small>
+            </button>
+            <div class="feature-panel" id="lockout" role="region" aria-labelledby="tab-lockout">
+              <p class="panel-group">Unlocking</p>
+              <h3>Wrong-attempt lockout</h3>
+              <p>Guessing is slowed down after five wrong attempts. The attempt counter is itself encrypted, and tampering with it locks the screen instead of resetting the count.</p>
+              <dl class="specs">
+                <div><dt>5 wrong tries</dt><dd>30-second wait</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-flip-shake" aria-expanded="false" aria-controls="flip-shake" data-group="unlock">
+              <b>Flip or shake to lock <span class="tier">Pro</span></b>
+              <small>Lock the vault instantly without touching the screen.</small>
+            </button>
+            <div class="feature-panel" id="flip-shake" role="region" aria-labelledby="tab-flip-shake">
+              <p class="panel-group">Unlocking</p>
+              <h3>Flip or shake to lock <span class="tier">Pro</span></h3>
+              <p>Turn your phone face down on a table, or give it a quick shake, and the vault locks straight away. Turn on either or both.</p>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-scrambled-keypad" aria-expanded="false" aria-controls="scrambled-keypad" data-group="unlock">
+              <b>Scrambled keypad <span class="tier">Pro</span></b>
+              <small>PIN keys move every time, so taps give nothing away.</small>
+            </button>
+            <div class="feature-panel" id="scrambled-keypad" role="region" aria-labelledby="tab-scrambled-keypad">
+              <p class="panel-group">Unlocking</p>
+              <h3>Scrambled keypad <span class="tier">Pro</span></h3>
+              <p>The digits are shuffled each time the keypad appears, so someone watching where you tap, or reading smudges on the screen, can't work out your PIN.</p>
+            </div>
+
+            <!-- Defence -->
+            <p class="group-label" data-group="defence">Intruders and decoys</p>
+
+            <button class="feature-tab" type="button" id="tab-intruder-selfie" aria-expanded="false" aria-controls="intruder-selfie" data-group="defence">
+              <b>Intruder selfie and alerts <span class="tier">Pro</span></b>
+              <small>See who tried to get in, and when.</small>
+            </button>
+            <div class="feature-panel" id="intruder-selfie" role="region" aria-labelledby="tab-intruder-selfie">
+              <p class="panel-group">Intruders and decoys</p>
+              <h3>Intruder selfie and alerts <span class="tier">Pro</span></h3>
+              <p>A wrong attempt takes a photo with the front camera and logs it with the time and how long the attempt was, so you know who was guessing. What they typed is never stored.</p>
+              <dl class="specs">
+                <div><dt>Records</dt><dd>Photo, time, length of the attempt</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-decoy-vault" aria-expanded="false" aria-controls="decoy-vault" data-group="defence">
+              <b>Decoy vault <span class="tier">Pro</span></b>
+              <small>A second PIN opens a harmless fake vault.</small>
+            </button>
+            <div class="feature-panel" id="decoy-vault" role="region" aria-labelledby="tab-decoy-vault">
+              <p class="panel-group">Intruders and decoys</p>
+              <h3>Decoy vault <span class="tier">Pro</span></h3>
+              <p>Set a second PIN, password or pattern that opens a separate vault with whatever harmless content you put in it. If you're ever pressured to unlock the app, you can open the decoy instead.</p>
+              <dl class="specs">
+                <div><dt>Kept apart</dt><dd>Not included in backups, and not opened by the recovery code</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-self-destruct" aria-expanded="false" aria-controls="self-destruct" data-group="defence">
+              <b>Self-destruct <span class="tier">Pro</span></b>
+              <small>Wipe the vault after too many wrong attempts.</small>
+            </button>
+            <div class="feature-panel" id="self-destruct" role="region" aria-labelledby="tab-self-destruct">
+              <p class="panel-group">Intruders and decoys</p>
+              <h3>Self-destruct <span class="tier">Pro</span></h3>
+              <p>After the number of wrong attempts you choose, everything in the vault is erased along with your unlock details and intruder alerts. Keep a backup if you turn this on.</p>
+              <dl class="specs">
+                <div><dt>Wipes after</dt><dd>3 to 20 wrong attempts</dd></div>
+                <div><dt>Erases</dt><dd>Vault contents, unlock details, intruder alerts</dd></div>
+              </dl>
+            </div>
+
+            <!-- Disguise -->
+            <p class="group-label" data-group="disguise">Disguise</p>
+
+            <button class="feature-tab" type="button" id="tab-app-disguise" aria-expanded="false" aria-controls="app-disguise" data-group="disguise">
+              <b>App disguise <span class="tier">Pro</span></b>
+              <small>Show a calculator or weather icon on your home screen.</small>
+            </button>
+            <div class="feature-panel" id="app-disguise" role="region" aria-labelledby="tab-app-disguise">
+              <p class="panel-group">Disguise</p>
+              <h3>App disguise <span class="tier">Pro</span></h3>
+              <p>Change the icon and name on your home screen so the vault looks like an everyday app. Opening it still shows the vault's lock screen.</p>
+              <dl class="specs">
+                <div><dt>Disguises</dt><dd>Calculator, FM Radio, Weather, To-Do List</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-fake-crash" aria-expanded="false" aria-controls="fake-crash" data-group="disguise">
+              <b>Fake crash screen <span class="tier">Pro</span></b>
+              <small>Greet snoopers with an "app keeps stopping" message.</small>
+            </button>
+            <div class="feature-panel" id="fake-crash" role="region" aria-labelledby="tab-fake-crash">
+              <p class="panel-group">Disguise</p>
+              <h3>Fake crash screen <span class="tier">Pro</span></h3>
+              <p>Instead of a lock screen, the app appears to crash, so there's no hint that anything is behind it. Long-press or double-tap to get past it.</p>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-hide-previews" aria-expanded="false" aria-controls="hide-previews" data-group="disguise">
+              <b>Hide previews <span class="tier">Pro</span></b>
+              <small>Plain tiles instead of thumbnails, and note text hidden.</small>
+            </button>
+            <div class="feature-panel" id="hide-previews" role="region" aria-labelledby="tab-hide-previews">
+              <p class="panel-group">Disguise</p>
+              <h3>Hide previews <span class="tier">Pro</span></h3>
+              <p>Browse the vault with plain tiles in place of thumbnails, for when someone might be looking over your shoulder. Notes show only their title and date, not what they say. Items open normally when you tap them.</p>
+            </div>
+
+            <!-- Viewing -->
+            <p class="group-label" data-group="viewing">Gallery and players</p>
+
+            <button class="feature-tab" type="button" id="tab-private-gallery" aria-expanded="false" aria-controls="private-gallery" data-group="viewing">
+              <b>Private gallery</b>
+              <small>Your photos and videos, sorted and searchable.</small>
+            </button>
+            <div class="feature-panel" id="private-gallery" role="region" aria-labelledby="tab-private-gallery">
+              <p class="panel-group">Gallery and players</p>
+              <h3>Private gallery</h3>
+              <p>Photos and videos are grouped by Today, Yesterday, this week and month, with favourites, search and a fast scroller for big collections.</p>
+              <dl class="specs">
+                <div><dt>Layout</dt><dd>Grid or list; pinch for 2 to 5 per row</dd></div>
+                <div><dt>Sort</dt><dd>Date, name, size, type, or favourites first</dd></div>
+                <div><dt>Select</dt><dd>Long-press and drag to pick many at once</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-photo-viewer" aria-expanded="false" aria-controls="photo-viewer" data-group="viewing">
+              <b>Photo viewer and slideshow</b>
+              <small>Zoom, swipe, rotate and play a slideshow.</small>
+            </button>
+            <div class="feature-panel" id="photo-viewer" role="region" aria-labelledby="tab-photo-viewer">
+              <p class="panel-group">Gallery and players</p>
+              <h3>Photo viewer and slideshow</h3>
+              <p>View photos full screen with the gestures you already know. Rotating a photo is remembered without changing the original file.</p>
+              <dl class="specs">
+                <div><dt>Gestures</dt><dd>Pinch or double-tap to zoom, swipe to move, swipe down to close</dd></div>
+                <div><dt>Slideshow</dt><dd>3 seconds per photo; 2, 5, 8 or 10 with Pro</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-photo-editor" aria-expanded="false" aria-controls="photo-editor" data-group="viewing">
+              <b>Photo editor <span class="tier">Pro</span></b>
+              <small>Crop, adjust, filter and draw without leaving the vault.</small>
+            </button>
+            <div class="feature-panel" id="photo-editor" role="region" aria-labelledby="tab-photo-editor">
+              <p class="panel-group">Gallery and players</p>
+              <h3>Photo editor <span class="tier">Pro</span></h3>
+              <p>Edit private photos inside the vault, so they never pass through another app. Your edit is saved as a new encrypted copy and the original is kept.</p>
+              <dl class="specs">
+                <div><dt>Tools</dt><dd>Crop and rotate, fine-tune, filters, draw, text and emoji, resize</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-video-player" aria-expanded="false" aria-controls="video-player" data-group="viewing">
+              <b>Video player</b>
+              <small>Plays straight from the vault, decrypted in memory.</small>
+            </button>
+            <div class="feature-panel" id="video-player" role="region" aria-labelledby="tab-video-player">
+              <p class="panel-group">Gallery and players</p>
+              <h3>Video player</h3>
+              <p>Videos stream from the encrypted vault without a decrypted copy ever being written to storage, and pick up where you left off.</p>
+              <dl class="specs">
+                <div><dt>Playback</dt><dd>Speed control, 10-second skip, resume, repeat, up-next queue</dd></div>
+                <div><dt>Display</dt><dd>Fit, fill or zoom; lock the controls</dd></div>
+                <div><dt>Tracks</dt><dd>Choose audio track and subtitles</dd></div>
+                <div><dt>Gestures</dt><dd>Swipe for brightness and volume</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-audio-pdf" aria-expanded="false" aria-controls="audio-pdf" data-group="viewing">
+              <b>Audio player and PDF viewer</b>
+              <small>Listen to recordings and read documents in the vault.</small>
+            </button>
+            <div class="feature-panel" id="audio-pdf" role="region" aria-labelledby="tab-audio-pdf">
+              <p class="panel-group">Gallery and players</p>
+              <h3>Audio player and PDF viewer</h3>
+              <p>Play audio with shuffle, repeat, a queue and a sleep timer, and read PDFs without them leaving the app. Other file types are stored encrypted and can be restored when you need to open them elsewhere.</p>
+            </div>
+
+            <!-- Organise -->
+            <p class="group-label" data-group="organise">Organising</p>
+
+            <button class="feature-tab" type="button" id="tab-add-files" aria-expanded="false" aria-controls="add-files" data-group="organise">
+              <b>Add photos, videos and files</b>
+              <small>Import from your gallery or share in from any app.</small>
+            </button>
+            <div class="feature-panel" id="add-files" role="region" aria-labelledby="tab-add-files">
+              <p class="panel-group">Organising</p>
+              <h3>Add photos, videos and files</h3>
+              <p>Use the Add sheet, or share straight into Encrypted Gallery from any app. After importing, it offers to delete the originals from your phone's gallery. On Android 11 and later you can allow that once, so it takes a single tap.</p>
+              <dl class="specs">
+                <div><dt>Images</dt><dd>JPG, PNG, GIF, WebP, HEIC, BMP</dd></div>
+                <div><dt>Video</dt><dd>MP4, MKV, WebM, MOV, AVI, 3GP</dd></div>
+                <div><dt>Audio</dt><dd>MP3, M4A, AAC, WAV, FLAC, OGG, Opus, AMR</dd></div>
+                <div><dt>Anything else</dt><dd>Stored as an encrypted file</dd></div>
+                <div><dt>Free plan</dt><dd>20 items, plus 5 more for 24 hours after a short ad; unlimited with Pro</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-private-camera" aria-expanded="false" aria-controls="private-camera" data-group="organise">
+              <b>Private camera</b>
+              <small>Take photos straight into the vault.</small>
+            </button>
+            <div class="feature-panel" id="private-camera" role="region" aria-labelledby="tab-private-camera">
+              <p class="panel-group">Organising</p>
+              <h3>Private camera</h3>
+              <p>Photos taken with the built-in camera go directly into the vault, encrypted, and never appear in your phone's gallery.</p>
+              <dl class="specs">
+                <div><dt>Captures</dt><dd>Photos</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-voice-recorder" aria-expanded="false" aria-controls="voice-recorder" data-group="organise">
+              <b>Voice recorder</b>
+              <small>Record private audio notes inside the vault.</small>
+            </button>
+            <div class="feature-panel" id="voice-recorder" role="region" aria-labelledby="tab-voice-recorder">
+              <p class="panel-group">Organising</p>
+              <h3>Voice recorder</h3>
+              <p>Record audio directly into the vault, or import existing recordings. They're encrypted like everything else.</p>
+              <dl class="specs">
+                <div><dt>Free plan</dt><dd>3 recordings; unlimited with Pro</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-secure-notes" aria-expanded="false" aria-controls="secure-notes" data-group="organise">
+              <b>Secure notes</b>
+              <small>An encrypted notebook with formatting and checklists.</small>
+            </button>
+            <div class="feature-panel" id="secure-notes" role="region" aria-labelledby="tab-secure-notes">
+              <p class="panel-group">Organising</p>
+              <h3>Secure notes</h3>
+              <p>Write passwords, plans or anything private in an encrypted note. Pin the important ones and colour-code the rest. Text shared from another app becomes a note.</p>
+              <dl class="specs">
+                <div><dt>Formatting</dt><dd>Headings, bold, italic, underline, highlight, lists, checklists, quotes, code, images</dd></div>
+                <div><dt>Free plan</dt><dd>3 notes of up to 200 characters and one picture each; unlimited with Pro</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-folders" aria-expanded="false" aria-controls="folders" data-group="organise">
+              <b>Folders</b>
+              <small>Keep the vault tidy, with an extra passcode per folder.</small>
+            </button>
+            <div class="feature-panel" id="folders" role="region" aria-labelledby="tab-folders">
+              <p class="panel-group">Organising</p>
+              <h3>Folders</h3>
+              <p>Sort media and files into folders. With Pro, folders can sit inside other folders as deep as you like, and any folder can have its own passcode on top of the vault lock, which also covers the folders inside it.</p>
+              <dl class="specs">
+                <div><dt>Free plan</dt><dd>3 folders each in Gallery and Files</dd></div>
+                <div><dt>Pro</dt><dd>Unlimited folders, folders inside folders, per-folder passcodes</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-restore" aria-expanded="false" aria-controls="restore" data-group="organise">
+              <b>Restore to your gallery</b>
+              <small>Move items back out of the vault whenever you like.</small>
+            </button>
+            <div class="feature-panel" id="restore" role="region" aria-labelledby="tab-restore">
+              <p class="panel-group">Organising</p>
+              <h3>Restore to your gallery</h3>
+              <p>Take an item back out of the vault and return it, decrypted, to your phone's gallery or the folder it came from.</p>
+            </div>
+
+            <!-- Storage -->
+            <p class="group-label" data-group="storage">Backup and storage</p>
+
+            <button class="feature-tab" type="button" id="tab-trash" aria-expanded="false" aria-controls="trash" data-group="storage">
+              <b>Trash</b>
+              <small>Deleted items wait 30 days before they're gone.</small>
+            </button>
+            <div class="feature-panel" id="trash" role="region" aria-labelledby="tab-trash">
+              <p class="panel-group">Backup and storage</p>
+              <h3>Trash</h3>
+              <p>Deleting moves items to Trash, with an undo right after. Trash empties itself after 30 days.</p>
+              <dl class="specs">
+                <div><dt>Kept for</dt><dd>30 days</dd></div>
+                <div><dt>Restore from Trash</dt><dd>Pro</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-backup" aria-expanded="false" aria-controls="backup" data-group="storage">
+              <b>Encrypted backup <span class="tier">Pro</span></b>
+              <small>Save a still-encrypted copy of your vault where you choose.</small>
+            </button>
+            <div class="feature-panel" id="backup" role="region" aria-labelledby="tab-backup">
+              <p class="panel-group">Backup and storage</p>
+              <h3>Encrypted backup <span class="tier">Pro</span></h3>
+              <p>Save your vault as a ZIP of already-encrypted files to a file or folder you pick, including Google Drive through Android's folder picker. Each backup is locked with its own key, which only your recovery code or this vault can open. Backups and restores keep going in the background, with a progress notification.</p>
+              <dl class="specs">
+                <div><dt>Saves to</dt><dd>Any file or folder you choose, including Google Drive</dd></div>
+                <div><dt>Restores</dt><dd>On this phone, a new phone or after reinstalling, with your recovery code. Restoring is free.</dd></div>
+                <div><dt>Schedule</dt><dd>Manual</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-secure-delete" aria-expanded="false" aria-controls="secure-delete" data-group="storage">
+              <b>Secure delete <span class="tier">Pro</span></b>
+              <small>Overwrite files with random data before deleting.</small>
+            </button>
+            <div class="feature-panel" id="secure-delete" role="region" aria-labelledby="tab-secure-delete">
+              <p class="panel-group">Backup and storage</p>
+              <h3>Secure delete <span class="tier">Pro</span></h3>
+              <p>Before a file is removed, its encrypted data is overwritten with random bytes, making recovery much harder. Phone storage can keep stray copies, so this is a best-effort extra on top of encryption.</p>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-duplicate-finder" aria-expanded="false" aria-controls="duplicate-finder" data-group="storage">
+              <b>Duplicate finder <span class="tier">Pro</span></b>
+              <small>Spot repeated photos and files in the vault.</small>
+            </button>
+            <div class="feature-panel" id="duplicate-finder" role="region" aria-labelledby="tab-duplicate-finder">
+              <p class="panel-group">Backup and storage</p>
+              <h3>Duplicate finder <span class="tier">Pro</span></h3>
+              <p>Find items you've added more than once and clear them out to free up space.</p>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-sd-card" aria-expanded="false" aria-controls="sd-card" data-group="storage">
+              <b>SD card vault <span class="tier">Pro</span></b>
+              <small>Keep the vault on removable storage.</small>
+            </button>
+            <div class="feature-panel" id="sd-card" role="region" aria-labelledby="tab-sd-card">
+              <p class="panel-group">Backup and storage</p>
+              <h3>SD card vault <span class="tier">Pro</span></h3>
+              <p>Store the encrypted vault on an SD card to save internal space. The files stay encrypted, so the card is unreadable on its own.</p>
+            </div>
+
+            <!-- Look -->
+            <p class="group-label" data-group="look">Appearance</p>
+
+            <button class="feature-tab" type="button" id="tab-themes" aria-expanded="false" aria-controls="themes" data-group="look">
+              <b>Themes and accent colours</b>
+              <small>Two themes and seven accent colours.</small>
+            </button>
+            <div class="feature-panel" id="themes" role="region" aria-labelledby="tab-themes">
+              <p class="panel-group">Appearance</p>
+              <h3>Themes and accent colours</h3>
+              <p>Pick a theme, then an accent colour for buttons and highlights.</p>
+              <dl class="specs">
+                <div><dt>Themes</dt><dd>Spectrum (light), Graphite (dark)</dd></div>
+                <div><dt>Accents</dt><dd>Orange; Teal, Aqua, Emerald, Amethyst, Gold and Rose with Pro</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-app-icon" aria-expanded="false" aria-controls="app-icon" data-group="look">
+              <b>Choose your app icon</b>
+              <small>Fingerprint, Waves or Shutter, all free.</small>
+            </button>
+            <div class="feature-panel" id="app-icon" role="region" aria-labelledby="tab-app-icon">
+              <p class="panel-group">Appearance</p>
+              <h3>Choose your app icon</h3>
+              <p>Pick the home-screen icon you like when you set up the app, or change it later in Settings. To make the vault look like a different app altogether, use App disguise.</p>
+              <dl class="specs">
+                <div><dt>Icons</dt><dd>Fingerprint (default), Waves, Shutter</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-haptics" aria-expanded="false" aria-controls="haptics" data-group="look">
+              <b>Haptic feedback</b>
+              <small>Set how strongly the phone buzzes when you tap.</small>
+            </button>
+            <div class="feature-panel" id="haptics" role="region" aria-labelledby="tab-haptics">
+              <p class="panel-group">Appearance</p>
+              <h3>Haptic feedback</h3>
+              <p>Choose how much vibration you feel on taps and actions, or turn it off.</p>
+              <dl class="specs">
+                <div><dt>Levels</dt><dd>None, Light, Medium, Strong</dd></div>
+              </dl>
+            </div>
+
+            <button class="feature-tab" type="button" id="tab-languages" aria-expanded="false" aria-controls="languages" data-group="look">
+              <b>Five languages</b>
+              <small>Switch the app's language from inside the app.</small>
+            </button>
+            <div class="feature-panel" id="languages" role="region" aria-labelledby="tab-languages">
+              <p class="panel-group">Appearance</p>
+              <h3>Five languages</h3>
+              <p>Use Encrypted Gallery in a different language from the rest of your phone.</p>
+              <dl class="specs">
+                <div><dt>Languages</dt><dd>English, German, Spanish, French, Hindi</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <p class="explorer-empty" hidden>No features match <q></q>. Try another word, or <button type="button">show all features</button>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Privacy, ads and permissions</h2>
+          <p>What Encrypted Gallery keeps on your phone, what it connects to, and why it asks for each permission. The <a href="https://appcraftdigital.co.in/encrypted-gallery-legal/privacy-policy.html">privacy policy</a> has the full detail.</p>
+        </div>
+        <dl class="privacy-list">
+          <div><dt>Stays on your phone</dt><dd>Your photos, videos, files, notes, PIN and recovery code are never sent anywhere. The vault is excluded from Android's automatic cloud backup.</dd></div>
+          <div><dt>No account</dt><dd>There's nothing to sign up for, and no server holds a copy of your vault.</dd></div>
+          <div><dt>Ads</dt><dd>The free version shows Google AdMob ads, with a consent form where required. Pro removes all ads.</dd></div>
+          <div><dt>Data collected</dt><dd>We run no analytics or crash reporting of our own. In the free version, Google's ads SDK collects device and advertising IDs, app interactions, diagnostics and approximate location, for ads, analytics and fraud prevention. Firebase Remote Config, used only to tell the app when an update is required, uses an installation ID.</dd></div>
+          <div><dt>Problem reports</dt><dd>Report a problem opens your own email app with a report you can read before sending. It never includes your files, file names, PIN or recovery code, and the app uploads nothing itself.</dd></div>
+          <div><dt>Permissions</dt><dd>Camera for the private camera and intruder selfies, microphone for the recorder, media or All files access to import items and remove the originals, and notifications to show backup and restore progress. Internet is used only for ads, purchases and the update check. Biometrics are optional.</dd></div>
+          <div><dt>Purchases</dt><dd>Pro is bought through Google Play and verified with our server. Plans are weekly, monthly, yearly or a one-time lifetime purchase.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How do I encrypt photos on my phone?</summary>
+            <p>Add the photos to Encrypted Gallery. Each one is encrypted on your phone with AES-256-GCM as it enters the vault, and can only be viewed inside the app after you unlock it. The app then offers to delete the unencrypted originals from your gallery.</p>
+          </details>
+          <details>
+            <summary>How do I hide photos on Android?</summary>
+            <p>Import them into Encrypted Gallery and choose to delete the originals when asked. On Android 11 and later you can allow All files access once, so removing originals takes a single tap instead of a confirmation each time.</p>
+          </details>
+          <details>
+            <summary>Is Encrypted Gallery free?</summary>
+            <p>Yes. Encryption, the gallery, players, camera, screenshot blocking, the recovery code and restoring a backup are free, with ads, for up to 20 items, 3 folders per section, 3 notes and 3 voice recordings. Pro removes ads and limits and adds biometric unlock, the decoy vault, intruder selfies, disguise, the photo editor and making encrypted backups.</p>
+          </details>
+          <details>
+            <summary>What if I forget my PIN?</summary>
+            <p>Use your recovery code. You save it when you set up the vault, and with it you can choose a new PIN, password or pattern. Your files stay just as they are. The same code opens your backups on a new phone.</p>
+          </details>
+          <details>
+            <summary>Is my vault uploaded to the cloud?</summary>
+            <p>No. Your photos, files, notes and PIN never leave your phone, and the vault is excluded from Android's automatic cloud backup. If you make a backup yourself (Pro), it is saved still encrypted to a file or folder you choose.</p>
+          </details>
+          <details>
+            <summary>What if someone makes me unlock it?</summary>
+            <p>With Pro you can set up a decoy vault: a second PIN, password or pattern that opens a separate, harmless vault. You can also have the vault wiped automatically after 3 to 20 wrong attempts.</p>
+          </details>
+          <details>
+            <summary>Can I unlock it with my fingerprint?</summary>
+            <p>Yes, with Pro, on phones with strong biometrics. The unlock key is tied to your phone's hardware and stops working if a new fingerprint or face is added, so your PIN is needed again.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>More from AppCraft Digital</h2>
         </div>
         <div class="related">
           <a href="/applock-ultra/">
-            <span class="app-icon"><img src="/assets/icons/applock-ultra.png" alt=""></span>
-            <span><b>AppLock Ultra</b><small>App locker</small></span>
+            <img src="/assets/icons/applock-ultra.png" alt="" width="48" height="48" loading="lazy">
+            <span><b>AppLock Ultra</b><small>Lock any app with a PIN, pattern or fingerprint</small></span>
           </a>
           <a href="/internet-velocity/">
-            <span class="app-icon"><img src="/assets/icons/internet-velocity.png" alt=""></span>
-            <span><b>Internet Velocity</b><small>Speed meter</small></span>
-          </a>
-          <a href="/multi-scanner-ultra/">
-            <span class="app-icon"><img src="/assets/icons/multi-scanner-ultra.png" alt=""></span>
-            <span><b>Multi Scanner</b><small>PDF scanner</small></span>
+            <img src="/assets/icons/internet-velocity.png" alt="" width="48" height="48" loading="lazy">
+            <span><b>Internet Velocity</b><small>Live speed meter and data usage</small></span>
           </a>
         </div>
       </div>
@@ -236,41 +746,37 @@
     <div class="wrap">
       <div class="foot-grid">
         <div>
-          <a class="brand" href="/" style="margin-bottom:12px;">
-            <span class="logo" aria-hidden="true">
-              <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="40" height="40">
-            </span>
-            <span>AppCraft Digital<small>Privacy-first apps</small></span>
+          <a class="brand" href="/">
+            <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="32" height="32">
+            AppCraft Digital
           </a>
-          <p>Independent Android studio building focused, offline-first utilities that put your privacy first.</p>
+          <p>An independent studio making focused Android utilities for privacy and control.</p>
         </div>
         <div class="foot-col">
-          <h5>Apps</h5>
+          <h2>Apps</h2>
           <a href="/applock-ultra/">AppLock Ultra</a>
-          <a href="/internet-velocity/">Internet Velocity</a>
-          <a href="/multi-scanner-ultra/">Multi Scanner Ultra</a>
           <a href="/encrypted-gallery/">Encrypted Gallery</a>
+          <a href="/internet-velocity/">Internet Velocity</a>
         </div>
         <div class="foot-col">
-          <h5>Legal &amp; Support</h5>
-          <a href="https://appcraftdigital.co.in/applock-ultra-legal/" target="_blank" rel="noopener">Privacy Policy</a>
-          <a href="https://appcraftdigital.co.in/applock-ultra-legal/terms.html" target="_blank" rel="noopener">Terms of Service</a>
-          <a href="https://appcraftdigital.co.in/applock-ultra-legal/support.html" target="_blank" rel="noopener">Support</a>
+          <h2>Encrypted Gallery</h2>
+          <a href="https://appcraftdigital.co.in/encrypted-gallery-legal/privacy-policy.html">Privacy policy</a>
+          <a href="https://appcraftdigital.co.in/encrypted-gallery-legal/terms.html">Terms of service</a>
+          <a href="https://appcraftdigital.co.in/encrypted-gallery-legal/support.html">Support</a>
         </div>
         <div class="foot-col">
-          <h5>Connect</h5>
+          <h2>Contact</h2>
+          <a href="mailto:appcraftdigital@gmail.com">appcraftdigital@gmail.com</a>
           <a href="https://github.com/sumant4ssm" target="_blank" rel="noopener">GitHub</a>
-          <a href="mailto:appcraftdigital@gmail.com">Email</a>
         </div>
       </div>
       <div class="foot-bottom">
-        <span>© <span id="year"></span> AppCraft Digital. All rights reserved.</span>
-        <span>Made with care · No cookies, no trackers.</span>
+        <span>© <span id="year">2026</span> AppCraft Digital</span>
+        <span>This website uses no cookies and no analytics.</span>
       </div>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="/assets/reveal.js" defer></script>
+  <script src="/assets/site.js?v=20261025" defer></script>
 </body>
 </html>
