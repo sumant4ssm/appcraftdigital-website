@@ -1,0 +1,14 @@
+# Local tooling output (Claude Code, Craft Anything investigations)
+.claude/
+agent-session.jsonl
+build-activity.log
+capture/
+checks/
+craft.json
+feed.json
+inbox/
+investigation.cany/
+usage.json
+
+# OS
+.DS_Store
