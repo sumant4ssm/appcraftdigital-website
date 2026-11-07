@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.documentElement.classList.add('js');</script>
+  <script>(function(d){d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')d.setAttribute('data-theme',t);}catch(e){}if('IntersectionObserver' in window&&window.matchMedia&&matchMedia('(prefers-reduced-motion: no-preference)').matches){d.classList.add('anim');setTimeout(function(){if(!d.classList.contains('anim-ready'))d.classList.remove('anim');},3000);}})(document.documentElement);</script>
   <title>AppCraft Digital — Android Apps for Privacy and Control</title>
   <meta name="description" content="AppCraft Digital makes AppLock Ultra, Encrypted Gallery and Internet Velocity: focused Android apps to lock apps, encrypt photos and files, and watch your internet speed and data usage.">
   <meta name="keywords" content="app lock, app locker, photo vault, encrypt photos, gallery lock, internet speed meter, data usage monitor, android apps, privacy apps">
   <meta name="author" content="AppCraft Digital">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#faf9fc" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121016" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f2f1ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://appcraftdigital.co.in/">
 
   <!-- Open Graph -->
@@ -33,7 +33,7 @@
   <meta name="twitter:image:alt" content="AppCraft Digital Android apps">
 
   <link rel="icon" type="image/png" href="/assets/brand/appcraft-digital-icon.png">
-  <link rel="stylesheet" href="/assets/style.css?v=20261025">
+  <link rel="stylesheet" href="/assets/style.css?v=20261110">
 
   <!-- Structured data: Organization + WebSite -->
   <script type="application/ld+json">
@@ -48,8 +48,7 @@
         "description": "Independent studio making focused Android utilities for privacy and control.",
         "email": "appcraftdigital@gmail.com",
         "logo": "https://appcraftdigital.co.in/assets/brand/appcraft-digital-icon.png",
-        "image": "https://appcraftdigital.co.in/assets/og/appcraft-digital.png",
-        "sameAs": ["https://github.com/sumant4ssm"]
+        "image": "https://appcraftdigital.co.in/assets/og/appcraft-digital.png"
       },
       {
         "@type": "WebSite",
@@ -67,160 +66,224 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site">
-    <div class="wrap nav">
+    <div class="nav">
       <a class="brand" href="/">
-        <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="32" height="32">
-        AppCraft Digital
+        <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="26" height="26">
+        <span>AppCraft Digital</span>
       </a>
-      <nav class="nav-links" aria-label="Primary">
+      <nav class="nav-links" id="site-menu" aria-label="Primary">
+        <a href="/" aria-current="page">Home</a>
         <a href="/applock-ultra/">AppLock Ultra</a>
         <a href="/encrypted-gallery/">Encrypted Gallery</a>
         <a href="/internet-velocity/">Internet Velocity</a>
-        <a href="#contact">Contact</a>
       </nav>
+      <div class="nav-end">
+        <button class="icon-cell theme-toggle" type="button" aria-label="Switch to dark theme" hidden>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-cell menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <h1>Lock your apps. Encrypt your photos. Watch your data.</h1>
+      <div class="wrap">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="ruler" aria-hidden="true"></div>
+        <div class="hero-grid">
+          <p class="wordmark" aria-hidden="true"><img src="/assets/brand/appcraft-digital-icon.png" alt="" width="96" height="96"><span class="wm-word"><span style="--i:0">A</span><span style="--i:1">p</span><span style="--i:2">p</span><span style="--i:3">C</span><span style="--i:4">r</span><span style="--i:5">a</span><span style="--i:6">f</span><span style="--i:7">t</span></span></p>
+          <h1>Lock your apps. Encrypt your photos. Watch your&nbsp;data.</h1>
           <p class="lead">AppCraft Digital is an independent studio making focused Android apps. Each one does a single job well, works without an account, and keeps your private data on your phone.</p>
           <div class="cta">
-            <a class="btn btn-ink" href="#apps">See the apps</a>
-            <a class="btn btn-line" href="#contact">Contact us</a>
+            <a class="btn btn-ink" href="#lineup">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5"/><rect x="13.5" y="4" width="6.5" height="6.5"/><rect x="4" y="13.5" width="6.5" height="6.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5"/></svg>
+              See the apps
+            </a>
+            <a class="btn btn-line" href="#contact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 7 9 6 9-6"/></svg>
+              Contact us
+            </a>
           </div>
+          <ul class="meta label">
+            <li>Android 8.0 and later</li>
+            <li>Free on Google Play</li>
+            <li>No account needed</li>
+          </ul>
         </div>
-        <nav class="app-index" aria-label="Our apps">
-          <a class="app-applock" href="/applock-ultra/">
-            <img src="/assets/icons/applock-ultra.png" alt="" width="56" height="56">
-            <span><b>AppLock Ultra</b><small>Lock any app with a PIN, pattern or fingerprint</small></span>
-            <span class="go" aria-hidden="true"></span>
-          </a>
-          <a class="app-gallery" href="/encrypted-gallery/">
-            <img src="/assets/icons/encrypted-gallery.png" alt="" width="56" height="56">
-            <span><b>Encrypted Gallery</b><small>An encrypted vault for photos, videos and files</small></span>
-            <span class="go" aria-hidden="true"></span>
-          </a>
-          <a class="app-velocity" href="/internet-velocity/">
-            <img src="/assets/icons/internet-velocity.png" alt="" width="56" height="56">
-            <span><b>Internet Velocity</b><small>Live speed meter and per-app data usage</small></span>
-            <span class="go" aria-hidden="true"></span>
-          </a>
+        <nav class="page-index" aria-label="On this page">
+          <a href="#apps">Our apps</a>
+          <a href="#lineup">Lineup</a>
+          <a href="#approach">Principles</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </section>
 
     <section class="section" id="apps">
       <div class="wrap">
-        <div class="section-head">
-          <h2>Our apps</h2>
-          <p>All three are free on Google Play, with optional upgrades. Open an app to explore every feature in detail.</p>
+        <div class="bar"><p>01 / <b>Our apps</b></p><p>Three apps · Android · No account</p></div>
+        <div class="intro">
+          <div>
+            <div class="section-head">
+              <h2>Three apps. One <em>promise</em>.</h2>
+              <p>Locking apps, encrypting photos and files, and watching your internet speed and data. All three are free on Google Play, with optional upgrades. Open an app to explore every feature in detail.</p>
+            </div>
+            <div class="cta">
+              <a class="btn btn-ink" href="#lineup">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+                Browse the lineup
+              </a>
+              <a class="btn btn-line" href="mailto:appcraftdigital@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 7 9 6 9-6"/></svg>
+                Email us
+              </a>
+            </div>
+            <p class="note"><b>Private by default:</b> every app keeps your data on your phone, and none of them asks you to make an account.</p>
+          </div>
+          <ul class="icon-grid">
+            <li><a href="/applock-ultra/"><img src="/assets/icons/applock-ultra.png" alt="" width="88" height="88">AppLock Ultra</a></li>
+            <li><a href="/encrypted-gallery/"><img src="/assets/icons/encrypted-gallery.png" alt="" width="88" height="88">Encrypted Gallery</a></li>
+            <li><a href="/internet-velocity/"><img src="/assets/icons/internet-velocity.png" alt="" width="88" height="88">Internet Velocity</a></li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <div class="app-rows">
-          <article class="app-row app-applock">
-            <div>
-              <div class="app-row-id">
-                <img src="/assets/icons/applock-ultra.png" alt="" width="72" height="72" loading="lazy">
-                <div>
-                  <h3>AppLock Ultra</h3>
-                  <p class="kind">App locker</p>
+    <section class="section" id="lineup">
+      <div class="wrap">
+        <div class="bar"><p>02 / <b>The lineup</b></p><p>Pick an app to explore</p></div>
+        <div class="lineup-wrap">
+          <div class="app-rows">
+            <article class="app-row app-applock">
+              <div class="card-top"><span class="num">01</span><span class="label">App locker</span></div>
+              <div class="card-visual" aria-hidden="true"></div>
+              <div class="card-body">
+                <div class="app-row-id"><img src="/assets/icons/applock-ultra.png" alt="" width="72" height="72" loading="lazy"></div>
+                <h3>AppLock <em>Ultra</em></h3>
+                <p class="kind">App locker</p>
+                <p class="desc">Lock any app with a PIN, pattern or fingerprint. Hide message previews from locked apps, see who tried to get in, and let lock profiles change the rules at work, at night or at home.</p>
+                <ul class="tags">
+                  <li class="on">On Google Play</li>
+                  <li>Free · Premium</li>
+                  <li>Android 8.0+</li>
+                </ul>
+                <p class="highlights-title label">Highlights</p>
+                <ul class="highlights">
+                  <li><a href="/applock-ultra/#hide-notifications"><b>Hide notifications</b><span>Message previews from locked apps stay private</span></a></li>
+                  <li><a href="/applock-ultra/#lock-profiles"><b>Lock profiles</b><span>Lock more at work or at night, relax at home</span></a></li>
+                  <li><a href="/applock-ultra/#intruder-selfie"><b>Intruder selfie</b><span>Photograph whoever keeps guessing your PIN</span></a></li>
+                  <li><a href="/applock-ultra/#fake-icon"><b>Fake icon</b><span>Look like a calculator, clock or weather app</span></a></li>
+                </ul>
+                <div class="cta">
+                  <a class="btn btn-ink" href="/applock-ultra/">Explore 25 features</a>
+                  <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.guardshield.applocker" target="_blank" rel="noopener">Google Play</a>
                 </div>
               </div>
-              <p class="desc">Lock any app with a PIN, pattern or fingerprint. Hide message previews from locked apps, see who tried to get in, and let lock profiles change the rules at work, at night or at home.</p>
-              <div class="cta">
-                <a class="btn btn-ink" href="/applock-ultra/">Explore 25 features</a>
-                <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.guardshield.applocker" target="_blank" rel="noopener">Google Play</a>
-              </div>
-            </div>
-            <div>
-              <p class="highlights-title">Highlights</p>
-              <ul class="highlights">
-                <li><a href="/applock-ultra/#hide-notifications"><b>Hide notifications</b><span>Message previews from locked apps stay private</span></a></li>
-                <li><a href="/applock-ultra/#lock-profiles"><b>Lock profiles</b><span>Lock more at work or at night, relax at home</span></a></li>
-                <li><a href="/applock-ultra/#intruder-selfie"><b>Intruder selfie</b><span>Photograph whoever keeps guessing your PIN</span></a></li>
-                <li><a href="/applock-ultra/#fake-icon"><b>Fake icon</b><span>Look like a calculator, clock or weather app</span></a></li>
-              </ul>
-            </div>
-          </article>
+            </article>
 
-          <article class="app-row app-gallery">
-            <div>
-              <div class="app-row-id">
-                <img src="/assets/icons/encrypted-gallery.png" alt="" width="72" height="72" loading="lazy">
-                <div>
-                  <h3>Encrypted Gallery</h3>
-                  <p class="kind">Photo and file vault</p>
+            <article class="app-row app-gallery">
+              <div class="card-top"><span class="num">02</span><span class="label">Photo and file vault</span></div>
+              <div class="card-visual" aria-hidden="true"></div>
+              <div class="card-body">
+                <div class="app-row-id"><img src="/assets/icons/encrypted-gallery.png" alt="" width="72" height="72" loading="lazy"></div>
+                <h3>Encrypted <em>Gallery</em></h3>
+                <p class="kind">Photo and file vault</p>
+                <p class="desc">Encrypt photos, videos, files and notes on your phone with AES-256. View them in a private gallery and players, and keep a decoy vault ready in case someone makes you unlock it.</p>
+                <ul class="tags">
+                  <li class="on">On Google Play</li>
+                  <li>Free · Pro</li>
+                  <li>Android 8.0+</li>
+                </ul>
+                <p class="highlights-title label">Highlights</p>
+                <ul class="highlights">
+                  <li><a href="/encrypted-gallery/#on-device-encryption"><b>Encrypted, not just hidden</b><span>Every file is encrypted before it's stored</span></a></li>
+                  <li><a href="/encrypted-gallery/#decoy-vault"><b>Decoy vault</b><span>A second PIN opens a harmless fake vault</span></a></li>
+                  <li><a href="/encrypted-gallery/#secure-notes"><b>Secure notes</b><span>An encrypted notebook with checklists</span></a></li>
+                  <li><a href="/encrypted-gallery/#backup"><b>Encrypted backup</b><span>Save a still-encrypted copy where you choose</span></a></li>
+                </ul>
+                <div class="cta">
+                  <a class="btn btn-ink" href="/encrypted-gallery/">Explore 37 features</a>
+                  <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.encryptedgallery.app" target="_blank" rel="noopener">Google Play</a>
                 </div>
               </div>
-              <p class="desc">Encrypt photos, videos, files and notes on your phone with AES-256. View them in a private gallery and players, and keep a decoy vault ready in case someone makes you unlock it.</p>
-              <div class="cta">
-                <a class="btn btn-ink" href="/encrypted-gallery/">Explore 37 features</a>
-                <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.encryptedgallery.app" target="_blank" rel="noopener">Google Play</a>
-              </div>
-            </div>
-            <div>
-              <p class="highlights-title">Highlights</p>
-              <ul class="highlights">
-                <li><a href="/encrypted-gallery/#on-device-encryption"><b>Encrypted, not just hidden</b><span>Every file is encrypted before it's stored</span></a></li>
-                <li><a href="/encrypted-gallery/#decoy-vault"><b>Decoy vault</b><span>A second PIN opens a harmless fake vault</span></a></li>
-                <li><a href="/encrypted-gallery/#secure-notes"><b>Secure notes</b><span>An encrypted notebook with checklists</span></a></li>
-                <li><a href="/encrypted-gallery/#backup"><b>Encrypted backup</b><span>Save a still-encrypted copy where you choose</span></a></li>
-              </ul>
-            </div>
-          </article>
+            </article>
 
-          <article class="app-row app-velocity">
-            <div>
-              <div class="app-row-id">
-                <img src="/assets/icons/internet-velocity.png" alt="" width="72" height="72" loading="lazy">
-                <div>
-                  <h3>Internet Velocity</h3>
-                  <p class="kind">Speed meter and data usage</p>
+            <article class="app-row app-velocity">
+              <div class="card-top"><span class="num">03</span><span class="label">Speed meter and data usage</span></div>
+              <div class="card-visual" aria-hidden="true"></div>
+              <div class="card-body">
+                <div class="app-row-id"><img src="/assets/icons/internet-velocity.png" alt="" width="72" height="72" loading="lazy"></div>
+                <h3>Internet <em>Velocity</em></h3>
+                <p class="kind">Speed meter and data usage</p>
+                <p class="desc">See your live download and upload speed in the status bar, find the apps using the most data, and keep a daily history of your usage. Cut off any app's internet with a local VPN.</p>
+                <ul class="tags">
+                  <li class="on">On Google Play</li>
+                  <li>Free</li>
+                  <li>Android 8.0+</li>
+                </ul>
+                <p class="highlights-title label">Highlights</p>
+                <ul class="highlights">
+                  <li><a href="/internet-velocity/#status-bar"><b>Speed in the status bar</b><span>A live readout at the top of your screen</span></a></li>
+                  <li><a href="/internet-velocity/#per-app-usage"><b>Data used by each app</b><span>Find what used the most in 24 hours</span></a></li>
+                  <li><a href="/internet-velocity/#usage-history"><b>Daily usage history</b><span>Day-by-day data use, kept on your phone</span></a></li>
+                  <li><a href="/internet-velocity/#app-blocker"><b>App internet blocker</b><span>Cut chosen apps off, no root needed</span></a></li>
+                </ul>
+                <div class="cta">
+                  <a class="btn btn-ink" href="/internet-velocity/">Explore 15 features</a>
+                  <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.internetvelocity.speedmeter" target="_blank" rel="noopener">Google Play</a>
                 </div>
               </div>
-              <p class="desc">See your live download and upload speed in the status bar, find the apps using the most data, and keep a daily history of your usage. Cut off any app's internet with a local VPN.</p>
-              <div class="cta">
-                <a class="btn btn-ink" href="/internet-velocity/">Explore 15 features</a>
-                <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.internetvelocity.speedmeter" target="_blank" rel="noopener">Google Play</a>
-              </div>
-            </div>
+            </article>
+          </div>
+
+          <div class="coming">
             <div>
-              <p class="highlights-title">Highlights</p>
-              <ul class="highlights">
-                <li><a href="/internet-velocity/#status-bar"><b>Speed in the status bar</b><span>A live readout at the top of your screen</span></a></li>
-                <li><a href="/internet-velocity/#per-app-usage"><b>Data used by each app</b><span>Find what used the most in 24 hours</span></a></li>
-                <li><a href="/internet-velocity/#usage-history"><b>Daily usage history</b><span>Day-by-day data use, kept on your phone</span></a></li>
-                <li><a href="/internet-velocity/#app-blocker"><b>App internet blocker</b><span>Cut chosen apps off, no root needed</span></a></li>
-              </ul>
+              <h3>Have an idea for the <em>next one</em>?</h3>
+              <p>Tell us which everyday problem on your phone deserves a focused, private app of its own.</p>
             </div>
-          </article>
+            <a class="btn btn-ink" href="mailto:appcraftdigital@gmail.com?subject=App%20idea">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 7 9 6 9-6"/></svg>
+              Suggest an app
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="approach">
       <div class="wrap">
+        <div class="bar"><p>03 / <b>Principles</b></p><p>Shared by every app</p></div>
         <div class="section-head">
-          <h2>How we build our apps</h2>
+          <h2>Built to stay <em>on your phone</em>.</h2>
           <p>Four things that hold for every AppCraft Digital app.</p>
         </div>
         <dl class="principles">
           <div>
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="1.5"/><path d="M10.5 18.5h3"/></svg></span>
+            <span class="idx label" aria-hidden="true">01</span>
             <dt>Your private data stays on your phone</dt>
             <dd>PINs, photos, files, notes, intruder photos and usage history are stored on the device, and the sensitive ones are encrypted. None of it is uploaded to us.</dd>
           </div>
           <div>
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10" cy="8" r="4"/><path d="M3 21c0-3.9 3.1-7 7-7 1.3 0 2.5.3 3.5.9M16 16l5 5M21 16l-5 5"/></svg></span>
+            <span class="idx label" aria-hidden="true">02</span>
             <dt>No accounts</dt>
             <dd>Install and start. There's nothing to sign up for and no profile on a server to leak.</dd>
           </div>
           <div>
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 12.5V4h8.5l9 9-8.5 8.5-9-9Z"/><circle cx="8" cy="8.5" r="1.4"/></svg></span>
+            <span class="idx label" aria-hidden="true">03</span>
             <dt>Free, with clear upgrades</dt>
             <dd>Every app is free on Google Play and supported by ads. Paid plans remove the ads and add extra features, and each app page marks exactly what's included.</dd>
           </div>
           <div>
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <span class="idx label" aria-hidden="true">04</span>
             <dt>Open about what's inside</dt>
             <dd>Each app page lists the ads, analytics and permissions that app uses, so you know before you install.</dd>
           </div>
@@ -230,17 +293,17 @@
 
     <section class="section" id="contact">
       <div class="wrap">
+        <div class="bar"><p>04 / <b>Contact</b></p><p>Questions · Bugs · Business</p></div>
         <div class="contact">
-          <div>
-            <h2>Get in touch</h2>
-            <p>Questions about an app, a bug to report, or a business enquiry? Email us directly.</p>
-          </div>
+          <p class="eyebrow label">Write to the developer</p>
+          <h2>Get in <em>touch</em>.</h2>
+          <p>Questions about an app, a bug to report, or a business enquiry? Email us directly.</p>
           <div class="contact-action">
-            <a class="btn" href="mailto:appcraftdigital@gmail.com">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <a class="btn btn-ink" href="mailto:appcraftdigital@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 7 9 6 9-6"/></svg>
               Email us
             </a>
-            <span class="contact-address">appcraftdigital@gmail.com</span>
+            <span class="contact-address label">appcraftdigital@gmail.com</span>
           </div>
         </div>
       </div>
@@ -252,10 +315,11 @@
       <div class="foot-grid">
         <div>
           <a class="brand" href="/">
-            <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="32" height="32">
+            <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="26" height="26">
             AppCraft Digital
           </a>
           <p>An independent studio making focused Android utilities for privacy and control.</p>
+          <a class="label" href="mailto:appcraftdigital@gmail.com">appcraftdigital@gmail.com</a>
         </div>
         <div class="foot-col">
           <h2>Apps</h2>
@@ -271,8 +335,7 @@
         </div>
         <div class="foot-col">
           <h2>Contact</h2>
-          <a href="mailto:appcraftdigital@gmail.com">appcraftdigital@gmail.com</a>
-          <a href="https://github.com/sumant4ssm" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:appcraftdigital@gmail.com">Email</a>
         </div>
       </div>
       <div class="foot-bottom">
@@ -282,6 +345,6 @@
     </div>
   </footer>
 
-  <script src="/assets/site.js?v=20261025" defer></script>
+  <script src="/assets/site.js?v=20261110" defer></script>
 </body>
 </html>

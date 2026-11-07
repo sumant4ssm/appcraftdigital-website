@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.documentElement.classList.add('js');</script>
+  <script>(function(d){d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')d.setAttribute('data-theme',t);}catch(e){}if('IntersectionObserver' in window&&window.matchMedia&&matchMedia('(prefers-reduced-motion: no-preference)').matches){d.classList.add('anim');setTimeout(function(){if(!d.classList.contains('anim-ready'))d.classList.remove('anim');},3000);}})(document.documentElement);</script>
   <title>Encrypted Gallery — Photo Vault that Encrypts Photos &amp; Files on Android</title>
   <meta name="description" content="Encrypted Gallery is a photo vault for Android that encrypts photos, videos, files and notes on your phone with AES-256. Decoy vault, intruder selfie and app disguise. No account.">
   <meta name="keywords" content="photo vault, encrypt photos, gallery lock, hide photos, private gallery, encrypted vault android, secure notes, decoy vault, hide videos, file locker">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#faf9fc" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121016" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f2f1ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://appcraftdigital.co.in/encrypted-gallery/">
 
   <meta property="og:type" content="website">
@@ -29,7 +29,7 @@
   <meta name="twitter:image:alt" content="Encrypted Gallery photo vault for Android">
 
   <link rel="icon" type="image/png" href="/assets/brand/appcraft-digital-icon.png">
-  <link rel="stylesheet" href="/assets/style.css?v=20261025">
+  <link rel="stylesheet" href="/assets/style.css?v=20261110">
 
   <script type="application/ld+json">
   {
@@ -90,21 +90,31 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site">
-    <div class="wrap nav">
+    <div class="nav">
       <a class="brand" href="/">
-        <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="32" height="32">
-        AppCraft Digital
+        <img src="/assets/brand/appcraft-digital-icon.png" alt="" width="26" height="26">
+        <span>AppCraft Digital</span>
       </a>
-      <nav class="nav-links" aria-label="Primary">
+      <nav class="nav-links" id="site-menu" aria-label="Primary">
+        <a href="/">Home</a>
         <a href="/applock-ultra/">AppLock Ultra</a>
         <a href="/encrypted-gallery/" aria-current="page">Encrypted Gallery</a>
         <a href="/internet-velocity/">Internet Velocity</a>
-        <a href="/#contact">Contact</a>
       </nav>
+      <div class="nav-end">
+        <button class="icon-cell theme-toggle" type="button" aria-label="Switch to dark theme" hidden>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-cell menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <a class="nav-cta" href="/#contact">Contact</a>
+      </div>
     </div>
   </header>
 
-  <div class="wrap">
+  <div class="wrap crumbs-wrap">
     <nav class="crumbs" aria-label="Breadcrumb">
       <ol>
         <li><a href="/">Home</a></li>
@@ -121,7 +131,7 @@
           <img class="app-hero-icon" src="/assets/icons/encrypted-gallery.png" alt="Encrypted Gallery icon" width="112" height="112">
           <div>
             <p class="status">On Google Play</p>
-            <h1>Encrypted Gallery</h1>
+            <h1>Encrypted <em>Gallery</em></h1>
             <p class="tagline">A vault for the photos, videos, files and notes you'd rather nobody saw. Everything is encrypted on your phone before it's stored, and opens only after you unlock.</p>
             <div class="cta">
               <a class="btn btn-ink" href="https://play.google.com/store/apps/details?id=com.encryptedgallery.app" target="_blank" rel="noopener">
@@ -143,6 +153,7 @@
 
     <section class="section explorer-section" id="features">
       <div class="wrap">
+        <div class="bar"><p>01 / <b>Features</b></p><p>37 features</p></div>
         <div class="section-head">
           <h2>Everything Encrypted Gallery can do</h2>
           <p>Pick a feature to see how it works and what you can set. Features marked Pro need a subscription or the one-time lifetime plan; the rest are free.</p>
@@ -669,6 +680,7 @@
 
     <section class="section" id="privacy">
       <div class="wrap">
+        <div class="bar"><p>02 / <b>Privacy</b></p><p>Ads · Analytics · Permissions</p></div>
         <div class="section-head">
           <h2>Privacy, ads and permissions</h2>
           <p>What Encrypted Gallery keeps on your phone, what it connects to, and why it asks for each permission. The <a href="https://appcraftdigital.co.in/encrypted-gallery-legal/privacy-policy.html">privacy policy</a> has the full detail.</p>
@@ -687,6 +699,7 @@
 
     <section class="section" id="faq">
       <div class="wrap">
+        <div class="bar"><p>03 / <b>Questions</b></p><p>Answers before you install</p></div>
         <div class="section-head">
           <h2>Questions</h2>
         </div>
@@ -725,6 +738,7 @@
 
     <section class="section">
       <div class="wrap">
+        <div class="bar"><p>04 / <b>More apps</b></p><p>From AppCraft Digital</p></div>
         <div class="section-head">
           <h2>More from AppCraft Digital</h2>
         </div>
@@ -767,7 +781,6 @@
         <div class="foot-col">
           <h2>Contact</h2>
           <a href="mailto:appcraftdigital@gmail.com">appcraftdigital@gmail.com</a>
-          <a href="https://github.com/sumant4ssm" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
       <div class="foot-bottom">
@@ -777,6 +790,6 @@
     </div>
   </footer>
 
-  <script src="/assets/site.js?v=20261025" defer></script>
+  <script src="/assets/site.js?v=20261110" defer></script>
 </body>
 </html>
